@@ -36,7 +36,8 @@ RUN apt-get install --fix-missing -q -y \
   libz-dev
 
 
-RUN git clone --branch  release-4.2.0 https://github.com/cloudera/hue.git 
+#RUN git clone --branch  release-4.2.0 https://github.com/cloudera/hue.git 
+RUN git clone  https://github.com/cloudera/hue.git 
 
 #ADD hue-release-4.1.0 hue
 WORKDIR hue
