@@ -35,6 +35,7 @@ RUN apt-get install --fix-missing -q -y \
   libgmp3-dev \
   libz-dev
 
+RUN apt-get install -y language-pack-zh-hans language-pack-zh-hans-base
 
 #RUN git clone --branch  release-4.2.0 https://github.com/cloudera/hue.git 
 RUN git clone  https://github.com/radishgz/hue.git 
