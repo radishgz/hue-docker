@@ -38,8 +38,8 @@ RUN apt-get install --fix-missing -q -y \
 RUN apt-get install -y language-pack-zh-hans language-pack-zh-hans-base
 RUN locale-gen zh_CN.UTF-8
 
-#RUN git clone --branch  release-4.2.0 https://github.com/cloudera/hue.git 
-RUN git clone  https://github.com/radishgz/hue.git 
+RUN git clone --branch  release-3.12.0 https://github.com/cloudera/hue.git 
+#RUN git clone  https://github.com/radishgz/hue.git 
 #ADD hue-release-4.1.0 hue
 WORKDIR hue
 RUN make -d apps
