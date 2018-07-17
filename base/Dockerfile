@@ -35,3 +35,4 @@ RUN apt-get install --fix-missing -q -y \
   libgmp3-dev \
   libz-dev
 
+RUN apt-get install -y language-pack-zh-hans language-pack-zh-hans-base
