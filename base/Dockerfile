@@ -1,6 +1,6 @@
 FROM radishgz/ubuntu144:jdk8 
 
-RUN apt-get update -y && apt-get install -y git python2.6-dev \
+RUN apt-get update -y && apt-get install -y python2.6 python2.6-dev\
 make \
 libkrb5-dev \
 libxml2-dev \
