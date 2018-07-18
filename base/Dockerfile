@@ -18,3 +18,5 @@ RUN add-apt-repository ppa:natecarlson/maven3
 RUN apt-get update -y && sudo apt-get -y install maven3
 RUN  ln -s /usr/bin/mvn3 /usr/bin/mvn
 RUN apt-get --no-install-recommends install -y asciidoc
+RUN apt-get install -y language-pack-zh-hans language-pack-zh-hans-base
+RUN locale-gen zh_CN.UTF-8
